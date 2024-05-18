@@ -37,7 +37,7 @@ class SignupActivity : AppCompatActivity() {
                 viewModel.signup(email, confirmPass).observe(this, { result ->
                     Toast.makeText(this, result, Toast.LENGTH_SHORT).show()
                     if (it.equals("Sign in successful")) {
-                        startActivity(Intent(this, ::class.java))
+                        startActivity(Intent(this,SignoutActivity ::class.java))
                     }
                 })
 

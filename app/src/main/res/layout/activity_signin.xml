@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="30dp"
+    android:background="#83E3EF"
     tools:context=".SigninActivity">
 
     <TextView
@@ -46,24 +47,21 @@
         app:layout_constraintTop_toBottomOf="@+id/emailEt" />
 
 
-
-
     <Button
         android:id="@+id/signinBtm"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="@color/white"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#83E3EF"
         android:text="Sign In"
         android:textColor="@color/black"
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="@+id/passwordEt"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.559"
         app:layout_constraintStart_toStartOf="@+id/passwordEt"
         app:layout_constraintTop_toBottomOf="@+id/passwordEt"
         app:strokeColor="@color/black"
         app:strokeWidth="1dp" />
-
 
     <TextView
         android:id="@+id/signupTxt"
@@ -73,10 +71,10 @@
         android:text="Don't have a account . Sign up first!!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/signinBtm"
-        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="@+id/signinBtm"
         app:layout_constraintTop_toBottomOf="@+id/signinBtm"
-        app:layout_constraintVertical_bias="0.52" />
+        app:layout_constraintVertical_bias="0.496" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

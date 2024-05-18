@@ -31,13 +31,12 @@ class SigninActivity : AppCompatActivity() {
                     Toast.makeText(this, "Please fill up all the fields!!!", Toast.LENGTH_SHORT)
                         .show()
                 } else {
-                    viewModel.signIn(email, password).observe(this, {
-                        Toast.makeText(this, it, Toast.LENGTH_SHORT).show()
-                        if (it.equals("Sign in successful")) {
+                    viewModel.signup(email, password).observe(this, {result->
+                        Toast.makeText(this, result, Toast.LENGTH_SHORT).show()
+                        if(it.equals("Sign in successful")){
                             startActivity(Intent(this, SignoutActivity::class.java))
                         }
                     })
-
                 }
             }
             binding.signupTxt.setOnClickListener {
