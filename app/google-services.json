@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "22934885283",
+    "project_id": "registertionfirebase-4503a",
+    "storage_bucket": "registertionfirebase-4503a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22934885283:android:992fcffaca2f8e12384016",
+        "android_client_info": {
+          "package_name": "com.example.registertionfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZZwyrZGSiU4DPon5NL1bkW4FHWOtwU5w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
