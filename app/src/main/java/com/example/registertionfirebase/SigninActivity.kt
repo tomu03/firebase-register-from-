@@ -22,15 +22,16 @@ class SigninActivity : AppCompatActivity() {
             binding.signinBtn.setOnClickListener {
                 val email = binding.emailEt.text.toString()
                 val password = binding.passwordEt.text.toString()
-                if(email.isEmpty() || password.isEmpty()){
-                    Toast.makeText(this,"Please fill up all the fields!!!", Toast.LENGTH_SHORT).show()
-                }else{
-                    viewModel.signIn(email,password).observe(this, {result ->
-                        Toast.makeText(this,result, Toast.LENGTH_SHORT).show()
-                        if(it.equals("Sign in successful")){
+
+                if (email.isEmpty() || password.isEmpty()) {
+                    Toast.makeText(this, "Please fill up all the fields!!!", Toast.LENGTH_SHORT).show()
+                } else {
+                    viewModel.signIn(email, password).observe(this) { result ->
+                        Toast.makeText(this, result, Toast.LENGTH_SHORT).show()
+                        if (result == "Sign in successful") {
                             startActivity(Intent(this, SignoutActivity::class.java))
                         }
-                    })
+                    }
                 }
             }
             binding.signupTxt.setOnClickListener {
