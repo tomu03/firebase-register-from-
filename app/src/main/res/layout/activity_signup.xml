@@ -58,7 +58,7 @@
         app:layout_constraintTop_toBottomOf="@+id/passwordEt" />
 
     <Button
-        android:id="@+id/signBtn"
+        android:id="@+id/signupBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
@@ -75,13 +75,13 @@
         />
 
     <TextView
-        android:id="@+id/logintxt"
+        android:id="@+id/signintxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Already have a account. Login!!"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/signBtn"
-        app:layout_constraintStart_toStartOf="@+id/signBtn"
-        app:layout_constraintTop_toBottomOf="@+id/signBtn" />
+        app:layout_constraintEnd_toEndOf="@+id/signupBtn"
+        app:layout_constraintStart_toStartOf="@+id/signupBtn"
+        app:layout_constraintTop_toBottomOf="@+id/signupBtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
