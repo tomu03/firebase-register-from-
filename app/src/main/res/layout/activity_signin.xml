@@ -48,7 +48,7 @@
 
 
     <Button
-        android:id="@+id/signinBtm"
+        android:id="@+id/signinBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
@@ -70,10 +70,10 @@
         android:layout_marginTop="148dp"
         android:text="Don't have a account . Sign up first!!"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/signinBtm"
+        app:layout_constraintEnd_toEndOf="@+id/signinBtn"
         app:layout_constraintHorizontal_bias="0.48"
-        app:layout_constraintStart_toStartOf="@+id/signinBtm"
-        app:layout_constraintTop_toBottomOf="@+id/signinBtm"
+        app:layout_constraintStart_toStartOf="@+id/signinBtn"
+        app:layout_constraintTop_toBottomOf="@+id/signinBtn"
         app:layout_constraintVertical_bias="0.496" />
 
 
